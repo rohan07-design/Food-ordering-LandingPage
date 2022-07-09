@@ -1,0 +1,209 @@
+body {
+    overflow-x: hidden;
+}
+
+/*heading*/
+
+#heading {
+    padding: 0 5%;
+    background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
+}
+
+#heading .navbar-brand {
+    font-family: 'Yeseva One', cursive;
+    color: white;
+    font-size: 2rem;
+}
+
+#heading .search {
+    position: relative;
+    margin-top: 20px;
+}
+
+#heading .btn {
+    margin: 0% 1%;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* buttons*/
+
+#button {
+    padding: 3% 7%;
+}
+
+#button .btn {
+    margin: 0% 2%; 
+}
+
+/*sliding section*/
+
+#sliding {
+    padding: 2% 5%;
+    background-color: rgb(241, 234, 234);
+}
+
+#sliding h2 {
+    margin-bottom: 30px;
+}
+ 
+#sliding img {
+    height: 250px;
+    width: 260px;
+    border-radius: 10%;
+    margin: 10px 20px;
+}
+
+/*unique*/
+
+#unique {
+    padding: 2% 5%;
+    background-color: white;
+}
+
+#unique h2 {
+    margin-bottom: 30px;
+}
+
+#unique img {
+    height: 300px;
+    width: 320px;
+    border-radius: 9%;
+}
+
+#unique .card {
+    border: none;
+}
+
+#unique .card p{
+    color: gray;
+    font-size: 19px;
+    line-height: 1.2;
+}
+
+#unique .emoji {
+    color: gray;
+}
+
+/*features*/
+
+#features {
+    background-color: rgb(58, 36, 36);
+    padding: 2% 5%;
+    text-align: center;
+}
+
+#features .row h3{
+    color: white;
+}
+
+#features i {
+    color: rgb(253, 191, 75);
+    margin-bottom: 20px;
+}
+
+#features p {
+    color:rgb(241, 234, 234);
+}
+
+/*contact*/
+
+#contact {
+    padding: 0% 5%;
+}
+
+#contact .col-8 {
+    margin: auto;
+    padding: 3% 7%; 
+    line-height: 2;
+}
+
+#contact .col-4 {
+    position: relative;
+    right: 10px;
+}
+
+#contact h4 {
+    color: gray;
+    margin: 30px 0px;
+}
+
+#contact button{
+    margin: 4px 8px;
+}
+
+/*footer*/
+
+hr {
+    position: relative;
+    bottom: 17px;
+    color: gray;
+}
+
+footer {
+    padding: 3% 5%;
+    background-color: black;
+    text-align: center;
+    bottom: 33px;
+}
+
+footer h5 hr{
+    color: gray;
+}
+
+footer p{
+    color: white;
+}
+
+#footer .fab{
+    color: white;
+    margin: 10px 10px;
+}
+/*media*/
+
+@media (max-width: 971px) {
+
+    #heading {
+        text-align: center;
+    }
+
+    #button .btn {
+        margin: 1% 1%;  
+    }
+
+    #sliding {
+        text-align: center;
+    }
+
+    #sliding h4 {
+        margin-bottom: 20px;
+    }
+
+    #unique {
+        text-align: center;
+    }
+
+    #unique .card {
+        align-items: center;
+    }
+
+    #unique p {
+        margin-bottom: 15px;
+    }
+
+    #features {
+        text-align: center;
+    }
+
+    #contact {
+        text-align: center;
+    }
+
+    #contact .col-4 img {
+        position: static;
+    }
+
+    #footer {
+        text-align: center;
+    }
+}

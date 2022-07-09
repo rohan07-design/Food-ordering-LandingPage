@@ -1,0 +1,332 @@
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!--JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+
+    <!--linked css files-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Food ordering</title>
+</head>
+
+<body>
+    <section id="heading">
+        <nav class="navbar navbar-expand-lg navbar-light bg-grey">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Cafe Carnival</a>
+                <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>-->
+                <div class="search">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline" data-bs-toggle="modal"
+                data-bs-target="#LoginModal">LogIn</button>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#SignupModal">SignUp</button>
+        </nav>
+
+        <!--Modal LogIn-->
+
+        <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">LogIn</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--modal for signUp-->
+
+        <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">SignUp</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="numberInputEmail1" class="form-label">Phone Number</label>
+                                <input type="number" class="form-control" id="numberInputEmail1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="nameInputEmail1" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="numberInputEmail1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <div class="form-text">We'll never share your password with anyone else.</div>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">
+                                    I agree to Cafe Carnival's Terms of Service, Privacy Policy</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">SignUp</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--buttons part-->
+    <section id="button">
+        <button type="button" class="btn btn-md btn-outline-secondary">Pure Veg <i class="fas fa-seedling"></i></button>
+        <a href="#unique" class="btn btn-md btn-outline-secondary" tabindex="-1" role="button">Great Offers <i
+                class="fas fa-glass-cheers"></i></a>
+                <a href="images/FINAL MENU.jpg" target="_blank" class="btn btn-outline-secondary btn-md" tabindex="-1" role="button">Visit Menu Card <i class="fas fa-caret-square-down"></i></a>
+        <button type="button" class="btn btn-md btn-outline-secondary" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">Safe & Hygenic <i class="fas fa-pump-soap"></i></button>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Safe & Hygenic <i class="fas fa-pump-soap"></i>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>What follows is just some placeholder text for this modal dialog. You just gotta ignite the
+                            light and let it shine! Come just as you are to me. Just own the night like the 4th of July.
+                            Infect me with your love and fill me with your poison. Come just as you are to me. End of
+                            the rainbow looking treasure.</p>
+                        <p>I can't sleep let's run away and don't ever look back, don't ever look back. I can't sleep
+                            let's run away and don't ever look back, don't ever look back. Yes, we make angels cry,
+                            raining down on earth from up above. I'm walking on air (tonight). Let you put your hands on
+                            me in my skin-tight jeans. Stinging like a bee I earned my stripes. I went from zero, to my
+                            own hero. Even brighter than the moon, moon, moon. Make 'em go, 'Aah, aah, aah' as you shoot
+                            across the sky-y-y! Why don't you let me stop by?</p>
+                        <p>Boom, boom, boom. Never made me blink one time. Yeah, you're lucky if you're on her plane.
+                            Talk about our future like we had a clue. Oh my God no exaggeration. You're original, cannot
+                            be replaced. The girl's a freak, she drive a jeep in Laguna Beach. It's no big deal, it's no
+                            big deal, it's no big deal. In another life I would make you stay. I'm ma get your heart
+                            racing in my skin-tight jeans. I wanna walk on your wave length and be there when you
+                            vibrate Never made me blink one time.</p>
+                        <p>We'd keep all our promises be us against the world. In another life I would be your girl. We
+                            can dance, until we die, you and I, will be young forever. And on my 18th Birthday we got
+                            matching tattoos. So open up your heart and just let it begin. 'Cause she's the muse and the
+                            artist. She eats your heart out. Like Jeffrey Dahmer (woo). Pop your confetti. (This is how
+                            we do) I know one spark will shock the world, yeah yeah. If you only knew what the future
+                            holds.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--sliding section-->
+    <section id="sliding">
+        <h2>Inspiration for your first order</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <img src="images/04e1dbc0ec30031e5f26d0bef922ea0c.jpeg">
+                    <h4>Paneer</h4>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <img src="images/1be4127a9dfd23d89aec9ec57a8e71f7.webp">
+                    <h4>Fries</h4>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <img src="images/607c9b1c21cf625a79aee13a30d27a7b1612521792.webp">
+                    <h4>Bowl</h4>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <img src="images/76d788a2600b609bb0a08443e03df95b.webp">
+                    <h4>Biryani</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--card section-->
+    <section id="unique">
+        <h2>Our Speciality</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="images/173233ec867f5ef1a580f1430e8ce4eb_o2_featured_v2.webp" class="card-img-top">
+                        <div class="card-body">
+                            <h4>Baked Cake</h4>
+                            <p class="card-text">Desserts, Bakery, Street Food, Mithai</p>
+                            <p class="card-text">200 Rs Per Person &nbsp;&nbsp;&nbsp; <i class="emoji fas fa-clock"></i>
+                                33mins</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="images/cb6e2e8747fe6fa947ce739338a7b519_o2_featured_v2.webp" class="card-img-top">
+                        <div class="card-body">
+                            <h4>South Indian Katta</h4>
+                            <p class="card-text">North Indian, South Indian, Chinese</p>
+                            <p class="card-text">100 Rs Per Person &nbsp;&nbsp;&nbsp; <i class="emoji fas fa-clock"></i>
+                                27mins</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="images/626fe314d8ba4ec965e165d3e2cd2a1d_o2_featured_v2.webp" class="card-img-top">
+                        <div class="card-body">
+                            <h4>Cafe Chocalate</h4>
+                            <p class="card-text">Beverages, Ice Cream</p>
+                            <p class="card-text">40 Rs Per Person &nbsp;&nbsp;&nbsp; <i class="emoji fas fa-clock"></i>
+                                22
+                                mins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--features-->
+    <section id="features">
+        <div class="row">
+            <div class="col-lg-4">
+                <i class="fas fa-clipboard-list fa-4x"></i>
+                <h3>No Minimum Order</h3>
+                <p>Order in for yourself or for the group, with no restrictions on order value</p>
+            </div>
+
+            <div class="col-lg-4">
+                <i class="fas fa-biking fa-4x"></i>
+                <h3>Lightning-Fast Delivery</h3>
+                <p>Experience Swiggy's superfast delivery for food delivered fresh & on time</p>
+            </div>
+            <div class="col-lg-4">
+                <i class="fas fa-map-marker-alt fa-4x"></i>
+                <h3>Live Order Tracking</h3>
+                <p>Know where your order is at all times, from the restaurant to your doorstep</p>
+            </div>
+        </div>
+    </section>
+
+    <!--contact section-->
+    <section id="contact">
+        <div class="row">
+            <div class="col-8">
+                <h1>Restaurants in your pocket</h1>
+                <h4>Order from your favorite restaurants & track on the go, with the all-new Cafe Carnival's app.</h4>
+                <button type="button" class="btn btn-lg btn-success"><i class="fab fa-android" style="color:white;"></i>
+                    Google Play</button>
+                <button type="button" class="btn btn-lg btn-dark" style="color:white;"><i class="fab fa-apple"></i> App
+                    Store</button>
+            </div>
+            <div class="col-4">
+                <img src="images/iPhone_wgconp_j0d1fn.png">
+            </div>
+        </div>
+    </section>
+    <!--footer section-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>COMPANY</h5>
+                    <p>About Us</p>
+                    <p>Team</p>
+                    <p>Careers</p>
+                    <p>Blog</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5>CONTACT</h5>
+                    <p>Help & Support</p>
+                    <p>Partner with Us</p>
+                    <p>Ride with Us</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5>LEGAL</h5>
+                    <p>Terms & Conditions</p>
+                    <p>Refund & Cancellation</p>
+                    <p>Privacy Policy</p>
+                    <p>Cookie Policy</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </footer>
+    <footer id="footer icon">
+        <i class="fab fa-facebook fa-2x"></i> &nbsp;
+        <i class="fas fa-mail-bulk fa-2x"></i>&nbsp;&nbsp;
+        <i class="fab fa-twitter-square fa-2x"></i>&nbsp;
+        <p>© 2021 Cafe Carnival</p>
+    </footer>
+</body>
+
+</html>
